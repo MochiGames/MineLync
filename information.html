@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Information - MineLync - Minecraft Network</title>
-    <link rel="icon" href="https://i.ibb.co/mS1mk6h/favicon.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap">
+    <link rel="icon" href="https://i.ibb.co/mS1mk6h/favicon.png" type="image/png">
     <style>
         body {
             background-color: #ac92ec;
@@ -16,6 +16,8 @@
         }
 
         header {
+            background-color: #ac92ec;
+            padding: 20px;
             text-align: center;
             margin-top: 20px;
         }
@@ -33,14 +35,52 @@
             font-size: 18px;
         }
 
-        #favicon-text {
-            display: none; /* Hide the favicon and text */
+        nav a.store-disabled {
+            text-decoration: line-through;
+            pointer-events: none;
+        }
+
+        #server-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #server-info p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        #play-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .play-now-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #ac92ec;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .play-now-button:hover {
+            background-color: #ac92ec;
+            color: #fff;
         }
 
         #copyright {
             text-align: center;
             margin-top: 20px;
             font-size: 14px;
+            color: #fff;
+        }
+
+        #copyright a {
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -48,12 +88,20 @@
     <header>
         <h1>MineLync</h1>
         <nav>
-            <a href="https://minelync.net" target="_blank" rel="noopener noreferrer">Home</a> •
-            <a href="https://store.minelync.net" target="_blank" rel="noopener noreferrer">Store</a> •
-            <a href="https://minelync.net/updates" target="_blank" rel="noopener noreferrer">Updates</a> •
-            <a href="https://minelync.net/information" target="_blank" rel="noopener noreferrer">Information</a>
+            <a href="https://minelync.net">Home</a> •
+            <a href="https://store.minelync.net" class="store-disabled">Store</a> •
+            <a href="https://minelync.net/updates">Updates</a> •
+            <a href="https://minelync.net/information">Information</a>
         </nav>
     </header>
+
+    <div id="server-info">
+        <p>SERVER IP > PLAY.MINELYNC.NET</p>
+    </div>
+
+    <div id="play-button">
+        <a href="https://minelync.net/play" class="play-now-button">PLAY NOW</a>
+    </div>
 
     <!-- Your content goes here -->
 
