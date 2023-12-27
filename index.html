@@ -35,6 +35,11 @@
             font-size: 18px;
         }
 
+        nav a.store-disabled {
+            text-decoration: line-through;
+            pointer-events: none;
+        }
+
         #server-info {
             text-align: center;
             margin-top: 20px;
@@ -84,7 +89,7 @@
         <h1>MineLync</h1>
         <nav>
             <a href="https://minelync.net">Home</a> •
-            <a href="https://shop.minelync.net">Store</a> •
+            <a href="https://store.minelync.net" class="store-disabled">Store</a> •
             <a href="https://minelync.net/updates">Updates</a> •
             <a href="https://minelync.net/information">Information</a>
         </nav>
